@@ -1,0 +1,18 @@
+const  deleteIcon=()=>{
+    // const content = `     
+    // <i class="fas fa-trash-alt trashIcon icon"></i>
+    
+    // `;
+    const i = document.createElement('i');
+    i.classList.add('fas','fa-trash-alt','trashIcon','icon')
+    i.addEventListener('click',deleteTask)
+    return i
+    }
+    const deleteTask=(e)=>{
+        // console.log("eliminar tarea")   ;
+        // console.log(e.target.parentElement)
+        const parent = e.target.parentElement;
+        parent.remove();
+    
+    }
+    export default deleteIcon;
